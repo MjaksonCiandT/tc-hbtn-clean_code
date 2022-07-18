@@ -13,7 +13,6 @@ public class Functions {
 
     public void saveUser(User user){};
 
-
     public User saveUser(User user){
         return userRepository.save(user);
     }
@@ -24,8 +23,6 @@ public class Functions {
       return userRepository.save(user);
     }
 
-
-
     public Environment getEnvironment(){
         return environmentService.getEnvironment(getVersion());
     }
@@ -35,5 +32,4 @@ public class Functions {
     private String getVersion(){
         return versionService.getVersion();
     }
-
 }
